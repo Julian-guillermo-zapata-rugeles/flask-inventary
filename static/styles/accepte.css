@@ -1,0 +1,17 @@
+h3{
+  background-color: green;
+  border-radius: 10px ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+table{
+  width: 90%;
+}
+th{
+  width: 30%;
+}
+
+
+input{
+border-radius: 5px;
+width: 30% inherit;

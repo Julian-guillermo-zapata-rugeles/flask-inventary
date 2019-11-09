@@ -1,0 +1,13 @@
+h3{
+  background-color: red;
+  border-radius: 10px ;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+table{
+  width: 90%;
+}
+th{
+  width: 45%;
+}
