@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/modificar.css') }}">
+  <title>INVENTARIOS</title>
+  <center><br>
+    <hr>
+  <label for="escritor"><h3> MODIFICAR ENTRADAS DEL INVENTARIO </h3></label><br>
+  {{ horalocal }}
+  <hr>
+  <br>
+  <center>
+  <a  href="reporte"><b>Reporte General</a>   <br>
+  <a  href="bajos"><b>Productos Bajos</a>   <br>
+  <a  href="modificar"><b>Salidas/Entradas</a><br>
+  <a href="agregar "><b>Inscribir Producto</a><br>
+  <a href="enviar reporte "><b>Enviar reporte </a><br>
+    <br><br><hr>
+<!--
+<input size="40%" type="text" name="detalle" id="enviar" list="productos">
+ <label for="escritor"><h3>Cantidad</label><br>
+ <input size="40%" type="text" name="detalle"> -->
+
+ <form action="public" method="post">
+ <p>Producto             <input size="40%" type="text" name="producto" list="productos" /></p>
+ <p>Cantidad             <input type="text" name="cantidad" /></p>
+ <!---<p><input type="submit" /></p> --->
+ <input type="submit" name="action" value="SUMAR" /><input type="submit" name="action" value="RESTAR" />
+</form>
+<datalist id="productos">
+
+<option>aperitivo brandy napoleon</option>
+<option>aperitivo curacao Manzana</option>
+<option>aperitivo curacao cachaca</option>
+<option>aperitivo curacao</option>
+<option>aperitivo granadina</option>
+<option>aperitivo jagermeiser litro</option>
+<option>aperitivo sangria curacaoa</option>
+<option>aperitivo triqple sec</option>
+<option>cerveza maltin polar</option>
+<option>coquito</option>
+<option>crema baileys 750</option>
+<option>Crema baileys litro</option>
+<option>crema Brogan</option>
+<option>crema piña colada litro</option>
+<option>ginebra amsterdam</option>
+<option>ginebra azov</option>
+<option>ginebra beefeder</option>
+<option>ginebra bombay</option>
+<option>ginebra gordons</option>
+<option>ginebra gordons garrafa</option>
+<option>ginebra greenland</option>
+<option>ginebra hendrix</option>
+<option>ginebra tanquerai </option>
+<option>ron 5 estrellas</option>
+<option>ron 5 estrellas blanco</option>
+<option>Ron abuelo 1/4</option>
+<option>Ron abuelo litro</option>
+<option>ron bacardi 1/2</option>
+<option>ron bacardi blanco</option>
+<option>ron bacardi limon</option>
+<option>ron barrica</option>
+<option>ron botran</option>
+<option>ron cacique 500</option>
+<option>ron cacique rojo</option>
+<option>ron carupano blanco</option>
+<option>ron cortez blanco</option>
+<option>ron diplomatico</option>
+<option>ron diplomatico reserva</option>
+<option>ron habana 7 años</option>
+<option>ron hechicera</option>
+<option>ron magitral</option>
+<option>ron mojito</option>
+<option>ron santa teresa 750</option>
+<option>ron santa teresa superior</option>
+<option>ron santa teresa superior lt</option>
+<option>tequila 1800 añejo 750</option>
+<option>tequila 1800 reposado litro</option>
+<option>tequila chapas blanco</option>
+<option>tequila chapas reposado</option>
+<option>tequila charro blanco</option>
+<option>tequila charro gold</option>
+<option>tequila charro reposado</option>
+<option>tequila corrales</option>
+<option>tequila don julio</option>
+<option>tequila jimador blanco</option>
+<option>tequila jimador reposado</option>
+<option>tequila jose cuervo 1/2</option>
+<option>tequila jose cuervo 750</option>
+<option>tequila jose cuervo blanco</option>
+<option>tequila jose cuervo litro</option>
+<option>tequila mezcal</option>
+<option>tequila rancho loco amarillo</option>
+<option>tequila rancho loco blanco</option>
+<option>viano andre rose</option>
+<option>vino andre brut</option>
+<option>vino andre semisec</option>
+<option>vino casillero blanco</option>
+<option>vino casillero carmeniere</option>
+<option>vino casillero merlot</option>
+<option>vino casillero tinto</option>
+<option>vino cuatro cumbres</option>
+<option>vino dubonet</option>
+<option>vino frontera blanco</option>
+<option>vino frontera merlot</option>
+<option>vino frontera tinto</option>
+<option>vino manischewitz</option>
+<option>vino santa rita</option>
+<option>vodka absolute litro</option>
+<option>vodka absolute miniatura</option>
+<option>vodka exquisite</option>
+<option>vodka glacial</option>
+<option>vodka gordons </option>
+<option>vodka grey gose </option>
+<option>vodka pablov</option>
+<option>vodka pablov</option>
+<option>vodka poliacov</option>
+<option>vodka sin7ns</option>
+<option>vodka smirnoff 750</option>
+<option>vodka smirnoff ice</option>
+<option>vodka smirnoff ice manzana</option>
+<option>vodka smirnoff litro</option>
+<option>vodka smirnoff lulo</option>
+<option>vodka xtreme</option>
+<option>wk ballantines</option>
+<option>wk black & white  litro</option>
+<option>wk black & white 1/2</option>
+<option>wk black & white 1/4</option>
+<option>wk black & white 750</option>
+<option>wk black streep</option>
+<option>wk blend seven</option>
+<option>wk Buchana master 750</option>
+<option>wk buchanas 1/2</option>
+<option>wk buchanas 750</option>
+<option>wk buchanas litro</option>
+<option>wk buchanas master litro</option>
+<option>wk chanceler</option>
+<option>wk chivas 21 rojo</option>
+<option>wk chivas 750</option>
+<option>wk chivas litro</option>
+<option>wk destiler</option>
+<option>wk doble black</option>
+<option>wk dumont</option>
+<option>wk elite reserva </option>
+<option>wk glend simons</option>
+<option>wk grants 1/2</option>
+<option>wk grants 750</option>
+<option>wk grants litro</option>
+<option>wk hilang reserva</option>
+<option>wk hunting</option>
+<option>wk jackdanields 750</option>
+<option>wk jackdanields canela</option>
+<option>wk jackdanields honey</option>
+<option>wk jackdanields litro</option>
+<option>wk james king</option>
+<option>wk king charles</option>
+<option>wk lavel 5 1/4</option>
+<option>wk lavel 5 370</option>
+<option>wk lavel 5 litro</option>
+<option>wk manager 1/4</option>
+<option>wk manager garrafa</option>
+<option>wk manager litro</option>
+<option>wk marchal</option>
+<option>wk mc gregor 1/4</option>
+<option>wk mc gregor litro</option>
+<option>wk old label</option>
+<option>wk old parr 1/2</option>
+<option>wk old parr 750</option>
+<option>wk old parr estampillada</option>
+<option>wk old parr litro</option>
+<option>wk old parr tributo</option>
+<option>wk robertico 1/4</option>
+<option>wk robertico litro</option>
+<option>wk royal choise</option>
+<option>wk sello negro 1/2</option>
+<option>wk sello negro 750</option>
+<option>wk sello negro litro</option>
+<option>wk sello rojo 750</option>
+<option>wk sello rojo litro</option>
+<option>wk sellor rojo 1/2</option>
+<option>wk sir edwards 1/4</option>
+<option>wk sir edwards litro</option>
+<option>wk smore</option>
+<option>wk something litro</option>
+<option>wk warrior</option>
+<option>wk wky</option>
+
+</datalist><center>
+</center></h3></label></center></div></head>
+<br><hr>
+</body>
+</html>
+
