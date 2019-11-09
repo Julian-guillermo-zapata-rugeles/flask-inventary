@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage2.css') }}">
+    Version Privada Estatica Punto Fijo <br>
+    reporte del Inventario
+    {{ horalocal }}
+    <br>
+    <center>
+    </head>
+  <center><h3> INVENTARIO  </h3><br>
+    <div>
+  <a class="btn1" href="reporte"><b>Reporte General</a><br>
+    <a class="btn1" href="bajos"><b>Productos Bajos</a><br>
+    <a class="btn1" href="modificar"><b>Salidas/Entradas</a><br>
+    <a class="btn1" href="agregar "><b>Inscribir Producto</a><br>
+    <a class="btn1" href="enviar reporte "><b>Enviar reporte </a><br><br>
+      </div>
+  <body><hr>
+    <table border="2">
+      <tr>
+        <th><b> Nombre del Producto<b></th>
+        <th><b> Cantidad <b></th>
+      </tr>
+      </table>
+      <table border="2">

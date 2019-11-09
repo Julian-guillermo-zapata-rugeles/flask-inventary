@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta charset="UTF-8"/>
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/modificar.css') }}">
+  <title>INVENTARIOS</title>
+  <center><br>
+    <hr>
+  <label for="escritor"><h3> MODIFICAR ENTRADAS DEL INVENTARIO </h3></label><br>
+  {{ horalocal }}
+  <hr>
+  <br>
+  <center>
+  <a  href="reporte"><b>Reporte General</a>   <br>
+  <a  href="bajos"><b>Productos Bajos</a>   <br>
+  <a  href="modificar"><b>Salidas/Entradas</a><br>
+  <a href="agregar "><b>Inscribir Producto</a><br>
+  <a href="enviar reporte "><b>Enviar reporte </a><br>
+    <br><br><hr>
+<!--
+<input size="40%" type="text" name="detalle" id="enviar" list="productos">
+ <label for="escritor"><h3>Cantidad</label><br>
+ <input size="40%" type="text" name="detalle"> -->
+
+ <form action="public" method="post">
+ <p>Producto             <input size="40%" type="text" name="producto" list="productos" /></p>
+ <p>Cantidad             <input type="text" name="cantidad" /></p>
+ <!---<p><input type="submit" /></p> --->
+ <input type="submit" name="action" value="SUMAR" /><input type="submit" name="action" value="RESTAR" />
+</form>
+<datalist id="productos">
+<!--@-->
+<option> Producto </option>
+<!--@-->
+</datalist><center>
+</center></h3></label></center></div></head>
+<br><hr>
+</body>
+</html>
